@@ -24,7 +24,8 @@
         android:layout_alignBottom="@+id/text1"
         android:layout_marginLeft="45dp"/>
     <TextView
-        android:id="@+id/cinco"
+
+        android:id="@+id/cincot"
         android:layout_width="150dp"
         android:gravity="center"
         android:layout_height="wrap_content"
@@ -38,11 +39,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="X"
-        android:layout_alignBaseline="@+id/cinco"
+        android:layout_alignBaseline="@+id/cincot"
         android:layout_centerHorizontal="true"
         android:textSize="35sp"
         />
     <TextView
+
         android:id="@+id/um"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
@@ -50,7 +52,7 @@
         android:text="2"
         android:textSize="50sp"
         android:layout_marginRight="16dp"
-        android:layout_alignBaseline="@+id/cinco"
+        android:layout_alignBaseline="@+id/cincot"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>
     <TextView
@@ -86,7 +88,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="60dp" />
     <Button
-        android:id="@+id/botao1"
+        android:id="@+id/botao1t"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addgols"
@@ -96,7 +98,7 @@
         android:text="+1"
         android:textSize="25sp"/>
     <Button
-        android:id="@+id/botao"
+        android:id="@+id/botaot"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addgols"
@@ -107,10 +109,10 @@
         android:text="-1"
         android:textSize="25sp"/>
     <Button
-
+        android:id="@+id/botao12"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/botao"
+        android:layout_below="@+id/botaot"
         android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="16dp"
@@ -118,10 +120,10 @@
         android:text="+12"
         android:textSize="25sp"/>
     <Button
-
+        android:id="@+id/botao3"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/botao"
+        android:layout_below="@+id/botaot"
         android:layout_marginTop="10dp"
 
         android:layout_marginLeft="16dp"
@@ -129,23 +131,23 @@
         android:text="+3"
         android:textSize="25sp"/>
     <Button
-
+        android:id="@+id/botao6"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/botao"
+        android:layout_below="@+id/botaot"
         android:layout_marginTop="10dp"
 
-        android:layout_alignRight="@id/botao1"
+        android:layout_alignRight="@id/botao1t"
         android:background="#80cbc4"
         android:text="+6"
         android:textSize="25sp"/>
     <Button
-
+        android:id="@+id/botao9"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/botao"
+        android:layout_below="@+id/botaot"
         android:layout_marginTop="10dp"
-        android:layout_alignLeft="@+id/botao"
+        android:layout_alignLeft="@+id/botaot"
         android:background="#80cbc4"
         android:text="+9"
         android:textSize="25sp"/>
