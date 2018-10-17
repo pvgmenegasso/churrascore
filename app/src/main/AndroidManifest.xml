@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Futebol"></activity>
-        <activity android:name=".Pebolim"></activity>
-        <activity android:name=".Truco"></activity>
+        <activity android:name=".Futebol" />
+        <activity android:name=".Pebolim" />
+        <activity android:name=".Truco" />
     </application>
 
 </manifest>
