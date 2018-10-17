@@ -14,6 +14,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.PopupWindow
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_splash.*
 import kotlinx.android.synthetic.main.activity_truco.*
 import kotlinx.android.synthetic.main.popup.*
@@ -62,7 +63,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
             }
             if(pontos2 >= 12)
             {
@@ -72,7 +73,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
         botaot.setOnClickListener() {
@@ -93,7 +94,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
             }
             if(pontos2 >= 12)
             {
@@ -103,7 +104,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
         botao3.setOnClickListener()
@@ -125,7 +126,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
 
             }
             if(pontos2 >= 12)
@@ -136,7 +137,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
         botao6.setOnClickListener()
@@ -158,7 +159,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
             }
             if(pontos2 >= 12)
             {
@@ -168,7 +169,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
         botao9.setOnClickListener()
@@ -190,7 +191,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
             }
             if(pontos2 >= 12)
             {
@@ -200,7 +201,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
         botao12.setOnClickListener()
@@ -222,7 +223,7 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text1.text.toString())
             }
             if(pontos2 >= 12)
             {
@@ -232,12 +233,13 @@ class Truco : AppCompatActivity() {
                 pontos2 = 0
                 cincot . setText (pontos1.toString())
                 um.setText(pontos2.toString())
-                mostrapopup()
+                mostrapopup(text2.text.toString())
             }
         }
     }
-    fun mostrapopup()
+    fun mostrapopup(time:String)
     {
+
         val inflater:LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val popup = inflater.inflate(R.layout.popup, null)
         val popupWindow = PopupWindow(
@@ -261,6 +263,8 @@ class Truco : AppCompatActivity() {
 
         }
         val vitoria = popup.findViewById<ImageView>(R.id.vitoria)
+        val timequeganhou = popup.findViewById<TextView>(R.id.timevencedor)
+        timequeganhou.setText(time)
         GlideApp.with(popup)
                 .load("https://media.tenor.com/images/2c3ab6ec5bb68cfba7a66a1e17d8b1f7/tenor.gif")
                 .placeholder(R.mipmap.ic_launcher)
